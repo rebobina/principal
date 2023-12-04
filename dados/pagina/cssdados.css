@@ -1,0 +1,146 @@
+*{
+    float: left;
+
+}
+
+.invisible{
+    opacity: 0;
+}
+
+
+#setstats{
+    width: 100%;
+    background-color:yellow;
+    margin-bottom:1%;
+    display: flex;
+    justify-content: space-around;
+}
+.stat{
+    width: 5%;
+    height: 90px;
+    margin:5px;
+    border-radius: 25px;
+    border-style: solid 0px;
+
+}
+
+#pericias{
+    background-color: aqua;
+    width: 49%;
+    display: flex;
+    justify-content: space-around;
+    float:left;
+}
+#butinvi{
+    margin-right: 20px;
+}
+
+
+
+
+#periciasFOR{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#periciasDES{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#periciasFOR{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#periciasFOR{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#periciasFOR{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#periciasFOR{
+    transition: opacity 1.3s;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    background-color: red;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.hidemen{
+    width: 100px;
+    height: 140px;  
+    margin: 10px;
+
+}
+
+.peribut{
+    width: 100px;
+    height: 140px;  
+    margin: 10px;
+}
+
+
+#dados{
+    width: 50%;
+    margin-left: 1%;
+    background-color: black;
+}
+
+.but{
+    width: 110px;
+    height: 200px;
+    margin: 10px;
+}
