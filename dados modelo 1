@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+#butoes{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@keyframes bots {
+    25%{background: linear-gradient(blue,rgb(0, 204, 255)); left: 0px; right: 0px;}
+    50%{background: linear-gradient(rgb(0, 255,0),rgb(238, 255, 0));left: 20px; right: 0px;}
+    75%{background: linear-gradient(red,rgb(195, 0, 255));left: 0px; right: 20px;}
+    100%{background: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 255));left: 20px; right: 0px;}
+}
+button{
+    width:175px;
+    height: 400px;
+    font-size: 50px;
+    margin-top: 6%;
+    
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: bots;
+    animation-duration: 7s;
+    animation-delay: -3s;
+    background: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 255));
+    left: 20px;
+    right: 0px;
+    transition: width 3s,height 4s,font-size 3s ;
+}
+button:hover{
+    width: 250px;
+    height: 450px;
+    font-size:80px ;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+    <div id="butoes">
+        <button class="but1" id="but1">DADO D2</button>
+        <button class="but2" id="but2">DADO D4</button>
+        <button class="but3" id="but3">DADO D6</button>
+        <button class="but4" id="but4">DADO D8</button>
+        <button class="but5" id="but5">DADO D10</button>
+        <button class="but6" id="but6">DADO D12</button>
+        <button class="but7" id="but7">DADO D20</button>
+        <button class="but8" id="but8">DADO D100</button>
+    </div>
+
+
+<script>
+
+var bot1,bot2,bot3,quant,finval,dado
+finval=0
+document.getElementById("but1").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*2)
+        finval=finval+dado
+        document.write(`valor do dado d2: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+
+document.getElementById("but2").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*4)
+        finval=finval+dado
+        document.write(`valor do dado d4: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but3").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*6)
+        finval=finval+dado
+        document.write(`valor do dado d6: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but4").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*8)
+        finval=finval+dado
+        document.write(`valor do dado d8: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but5").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*10)
+        finval=finval+dado
+        document.write(`valor do dado d10: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but6").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*12)
+        finval=finval+dado
+        document.write(`valor do dado d12: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but7").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*20)
+        finval=finval+dado
+        document.write(`valor do dado d20: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+document.getElementById("but8").addEventListener("click", function() {
+    quant=Number(prompt('qual a quantidade de dados?'))
+    for(var cont=1;cont<=quant;cont++){
+        dado=Math.ceil(Math.random()*100)
+        finval=finval+dado
+        document.write(`valor do dado d100: ${dado}<br>`)           
+    }
+    document.write(`valor final ${finval}`)
+});
+
+
+
+</script>
+    
+</body>
+</html>
